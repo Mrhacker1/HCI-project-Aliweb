@@ -1,0 +1,256 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ffea00;
+    color: white;
+    padding: 10px;
+}
+
+.top-header {
+    justify-content: space-between;
+    align-items: center;
+    
+   }
+.all{
+    background-color: yellow;
+}
+
+.logo {
+    height: 50px; 
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    flex:1;
+}
+
+.search-input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation {
+    background-color: #444; 
+}
+
+.category-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.category-menu li {
+    padding: 0 20px;
+}
+
+.category-menu li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.category-menu li a:hover {
+    color: #ddd; 
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+.main-content {
+    text-align: center; 
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .top-header, .category-menu {
+        flex-direction: column;
+    }
+
+    .category-menu li {
+        padding: 5px 0;
+    }
+
+    .search-container {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px; 
+    }
+
+    .navigation .dropdown-content {
+        position: static; 
+    }
+}
+
+.navigation .dropdown {
+    position: relative;
+}
+
+.navigation .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navigation .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navigation .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.navigation .dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.navigation .dropdown:hover > a {
+    background-color: #555; 
+}
+
+#searchDropdown {
+    display: none; 
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  #searchDropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #searchInput:focus + #searchDropdown {
+    display: block; 
+  }
+
+
+
+#testimonials {
+    background-color: #ffff; 
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px; 
+}
+
+#testimonials h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.testimonials-slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testimonial-item {
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+
+#newsletter {
+    background-color: #333; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#newsletter h2 {
+    margin-bottom: 20px;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#newsletter input[type="email"] {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 250px; 
+}
+
+#newsletter button {
+    padding: 10px 15px;
+    background-color: red; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#newsletter button:hover {
+    background-color: #e60000; 
+}
+
+@media (max-width: 768px) {
+    .testimonials-slider {
+        flex-direction: column;
+    }
+
+    #newsletter form {
+        flex-direction: column;
+    }
+
+    #newsletter input[type="email"] {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    #newsletter button {
+        width: 100%; 
+    }
+}
