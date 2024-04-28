@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="aliweb.css">
+</head>
+<body>
+
+    <header>
+        <div class="top-header">
+            <img src="logo.png" alt="Aliweb Logo" class="logo"> 
+        
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by sub-category" class="search-input">
+                <button type="submit" onclick="narrowSearch()" class="search-button">Search</button>
+            </div>
+            
+            <script>
+              
+              var pathMappings = {
+                    "browsers": "computing/browsers.html",
+                    "cgi java": "computing/CGIJava.html",
+                    "companies": "computing/Companies.html",
+                    "free services": "computing/FreeServices.html",
+                    "games": "computing/Games.html",
+                    "site help": "computing/SiteHelp.html",
+                    "site tools": "computing/SiteTools.html",
+                    "software": "computing/Software.html",
+                    "support": "computing/Support.html",
+            
+                    "movies": "Entertainment/Movies.html",
+                    "movie studios": "Entertainment/MovieStudios.html",
+                    "music concerts": "Entertainment/MusicConcerts.html",
+                    "music ezines": "Entertainment/MusicEzines.html",
+                    "music news": "Entertainment/MusicNews.html",
+                    "music search": "Entertainment/MusicSearch.html",
+                    "stars": "Entertainment/Stars.html",
+                    "tv": "Entertainment/TV.html",
+                    "tv networks": "Entertainment/TVNetworks.html",
+
+                    "art": "Living/Art.html",
+                    "education": "Living/Education.html",
+                    "family": "Living/Family.html",
+                    "food": "Living/Food.html",
+                    "health": "Living/Health.html",
+                    "home": "Living/Home.html",
+                    "kids": "Living/Kids.html",
+                    "seniors": "Living/Seniors.html",
+                    "women": "Living/Women.html",
+
+                    "banking": "Money/Banking.html",
+                    "career": "Money/Career.html",
+                    "insurance": "Money/Insurance.html",
+                    "investing": "Money/Investing.html",
+                    "news": "Money/News.html",
+
+                    "comics": "Newsstand/Comics.html",
+                    "ezines": "Newsstand/E-zines.html",
+                    "news": "Newsstand/News.html",
+                    "newslinks": "Newsstand/NewsLinks.html",
+                    "newsother": "Newsstand/NewsOther.html",
+                    "satire": "Newsstand/Satire.html",
+                    "technology": "Newsstand/Technology.html",
+                    "weather": "Newsstand/Weather.html",
+                    "worldnews": "Newsstand/WorldNews.html",
+
+                    "games": "Recreation/Games.html",
+                    "outdoors": "Recreation/Outdoors.html",
+                    "sportsnews": "Recreation/SportsNews.html",
+                    "sportsorg": "Recreation/SportsOrg.html",
+                    "travelguides": "Recreation/TravelGuides.html",
+                    "travel": "Recreation/Travel.html",
+
+                    "allinonesearch": "Research/AllInOneSearch.html",
+                    "companies": "Research/Companies.html",
+                    "genealogy": "Research/Genealogy.html",
+                    "government": "Research/Government.html",
+                    "history": "Research/History.html",
+                    "maps": "Research/Maps.html",
+                    "newsgroups": "Research/Newsgroups.html",
+                    "phonenumbers": "Research/PhoneNumbers.html",
+                    "reference": "Research/Reference.html",
+                    "research": "Research/Research.html",
+                    "searchengines": "Research/SearchEngines.html",
+                    "searchindexes": "Research/SearchIndexes.html",
+                    "whatsnew": "Research/WhatsNew.html", 
+
+                    "auto": "Shopping/Auto.html",
+                    "autocompanies": "Shopping/AutoCompanies.html",
+                    "books": "Shopping/Books.html",
+                    "computers": "Shopping/Computers.html",
+                    "food": "Shopping/Food.html",
+                    "freestuff": "Shopping/FreeStuff.html",
+                    "homes": "Shopping/Homes.html",
+                    "malls": "Shopping/Malls.html",
+                    "music": "Shopping/Music.html",
+                    "other": "Shopping/Other.html",
+                    "shipping": "Shopping/Shipping.html"
+
+
+                };
+            
+                function narrowSearch() {
+                    var input = document.getElementById('searchInput').value.trim().toLowerCase();
+                
+                    input = input.replace(/\s+/g, '');
+            
+                    var path = pathMappings[input];
+                    if (path) {
+                        window.location = path;
+                    } else {
+                        alert("No results found. Please try a different search term.");
+                    }
+                }
+            </script>
+
+
+        </div>
+    </header>
+            
+
+
+
+
+        </div>
+
+        <nav class="navigation">
+            <ul class="category-menu">
+
+                <li class="dropdown">
+                    <a href="#">Computing</a>
+                        <div class="dropdown-content">
+                            <a href="./computing/browsers.html">Browsers</a>
+                            <a href="./computing/CGIJava.html">CGI/Java</a>
+                            <a href="./computing/Companies.html">Companies</a>
+                            <a href="./computing/FreeServices.html">Free Services</a>
+                            <a href="./computing/Games.html">Games</a>
+                            <a href="./computing/SiteHelp.html">Site Help</a>
+                            <a href="./computing/SiteTools.html">Site Tools</a>
+                            <a href="./computing/Software.html">Software</a>
+                            <a href="./computing/Support.html">Support</a>
+                         </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Entertainment</a>
+                    <div class="dropdown-content">
+                        <a href="./Entertainment/Movies.html">Movies</a>
+                        <a href="./Entertainment/MovieStudios.html">Movie Studios</a>
+                        <a href="./Entertainment/MusicEnzines.html">Music Ezines</a>
+                        <a href="./Entertainment/MusicConcerts.html">Music Concerts</a>
+                        <a href="./Entertainment/MusicNews.html">Music News</a>
+                        <a href="./Entertainment/MusicSearch.html">Music Search</a>
+                        <a href="./Entertainment/Stars.html">Stars</a>
+                        <a href="./Entertainment/TV.html">TV</a>
+                        <a href="./Entertainment/TVNetworks.html">TV Networks</a>
+                    </div>
+                    
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Living</a>
+                    <div class="dropdown-content">
+                        <a href="./Living/Art.html">Art</a>
+                        <a href="./Living/Education.html">Education</a>
+                        <a href="./Living/Family.html">Family</a>
+                        <a href="./Living/Food.html">Food</a>
+                        <a href="./Living/Health.html">Health</a>
+                        <a href="./Living/Home.html">Home</a>
+                        <a href="./Living/Kids.html">Kids</a>
+                        <a href="./Living/Women.html">Women</a>
+                        <a href="./Living/Seniors.html">Seniors</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Money</a>
+                    <div class="dropdown-content">
+                        <a href="./Money/Banking.html">Banking</a>
+                        <a href="./Money/Career.html">Career</a>
+                        <a href="./Money/Insurance.html">Insurance</a>
+                        <a href="./Money/Investing.html">Investing</a>
+                        <a href="./Money/News.html">News</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Newstand</a>
+                    <div class="dropdown-content">
+                        <a href="./Newsstand/Comics.html">Comics</a>
+                        <a href="./Newsstand/Ezines.html">E-zines</a>
+                        <a href="./Newsstand/News.html">News</a>
+                        <a href="./Newsstand/NewsLinks.html">News Links</a>
+                        <a href="./Newsstand/NewsOther.html">News Other</a>
+                        <a href="./Newsstand/Satire.html">Satire</a>
+                        <a href="./Newsstand/Technology.html">Technology</a>
+                        <a href="./Newsstand/WorldNews.html">World News</a>
+                        <a href="./Newsstand/Weather.html">Weather</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Recreation</a>
+                    <div class="dropdown-content">
+                        <a href="./Recreation/Games.html">Games</a>
+                        <a href="./Recreation/Outdoors.html">Outdoors</a>
+                        <a href="./Recreation/SportsNews.html">Sports News</a>
+                        <a href="./Recreation/SportsOrg.html">Sports Org</a>
+                        <a href="./Recreation/Travel.html">Travel</a>
+                        <a href="./Recreation/TravelGuides.html">Travel Guides</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#">Research</a>
+                    <div class="dropdown-content">
+                        <a href="./Research/AllInOneSearch.html">All in One Search</a>
+                        <a href="./Research/Companies.html">Companies</a>
+                        <a href="./Research/Genealogy.html">Genealogy</a>
+                        <a href="./Research/Government.html">Government</a>
+                        <a href="./Research/History.html">History</a>
+                        <a href="./Research/Maps.html">Maps</a>
+                        <a href="./Research/Newsgroups.html">Newsgroups</a>
+                        <a href="./Research/PhoneNumbers.html">Phone Numbers</a>
+                        <a href="./Research/Reference.html">Reference</a>
+                        <a href="./Research/Research.html">Research</a>
+                        <a href="./Research/SearchEngines.html">Search Engines</a>
+                        <a href="./Research/SearchIndexes.html">Search Indexes</a>
+                        <a href="./Research/WhatsNew.html">What's New?</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a href="#">Shopping</a>
+                    <div class="dropdown-content">
+                        <a href="./Shopping/Auto.html">Auto</a>
+                        <a href="./Shopping/AutoCompanies.html">Auto Companies</a>
+                        <a href="./Shopping/Books.html">Books</a>
+                        <a href="./Shopping/Compare.html">Compare</a>
+                        <a href="./Shopping/Computers.html">Computers</a>
+                        <a href="./Shopping/Food.html">Food</a>
+                        <a href="./Shopping/FreeStuff.html">Free Stuff</a>
+                        <a href="./Shopping/Homes.html">Homes</a>
+                        <a href="./Shopping/Malls.html">Malls</a>
+                        <a href="./Shopping/Music.html">Music</a>
+                        <a href="./Shopping/Other.html">Other</a>
+                        <a href="./Shopping/Shipping.html">Shipping</a>
+                    </div>
+                </li>                
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+    <main class="main-content">
+        <section id="home">
+            <h1>Welcome to Our Website</h1>
+            <p>Welcome to this page, AliLinks - Links to the web's best sites all on one easy to navigate page.</p>
+        </section>
+
+
+
+
+          
+        <section id="testimonials">
+            
+            <div class="testimonials-slider">
+              <div class="testimonial-item">
+                <p>"AliLinks has made finding quality sites so much easier. The categories are well-organized, and I always discover something new and useful!"</p>
+                <cite>— Jamie L., Web Enthusiast</cite>
+              </div>
+              <div class="testimonial-item">
+                <p>"I love the simplicity of AliLinks. It’s my go-to source when I need to find information quickly and without hassle."</p>
+                <cite>— Alex D., Researcher</cite>
+              </div>
+              <div class="testimonial-item">
+                <p>"As a teacher, I appreciate a well-curated directory. AliLinks offers a diverse range of educational resources that I use in my classroom."</p>
+                <cite>— Morgan R., Educator</cite>
+              </div>
+              <div class="testimonial-item">
+                <p>"I stumbled upon AliLinks when looking for travel sites. Not only did I find great travel advice, but I also ended up exploring other amazing categories."</p>
+                <cite>— Casey S., Travel Blogger</cite>
+              </div>
+              <div class="testimonial-item">
+                <p>"The Shopping category on AliLinks is a goldmine for finding online deals. It's now my first stop before making any online purchase."</p>
+                <cite>— Taylor E., Shopping Aficionado</cite>
+              </div>
+            </div>
+          </section>
+          
+          
+     
+
+
+
+
+    </main>
+
+    <footer>
+       
+        <form>
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <p>&copy; 2024 Aliweb. All rights reserved.</p>
+
+    </footer>
+</body>
+</html>

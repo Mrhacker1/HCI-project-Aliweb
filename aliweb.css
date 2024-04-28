@@ -22,11 +22,7 @@ header {
 .top-header {
     justify-content: space-between;
     align-items: center;
-    
    }
-.all{
-    background-color: yellow;
-}
 
 .logo {
     height: 50px; 
@@ -73,7 +69,9 @@ header {
 }
 
 .category-menu li a:hover {
-    color: #ddd; 
+    color: #ddd;
+    font-weight: bold;
+    color: black;
 }
 
 main {
@@ -117,7 +115,7 @@ footer {
 }
 
 .navigation .dropdown {
-    position: relative;
+    position: relative; 
 }
 
 .navigation .dropdown-content {
@@ -146,6 +144,9 @@ footer {
 
 .navigation .dropdown:hover > a {
     background-color: #555; 
+    padding: 10px;
+    color: white;
+    font-weight: bold;
 }
 
 #searchDropdown {
@@ -169,7 +170,6 @@ footer {
   }
 
 
-
 #testimonials {
     background-color: #ffff; 
     padding: 20px;
@@ -178,7 +178,7 @@ footer {
 }
 
 #testimonials h2 {
-    color: #333;
+    color: #333; 
     margin-bottom: 20px;
 }
 
@@ -197,7 +197,7 @@ footer {
 
 
 #newsletter {
-    background-color: #333; 
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
