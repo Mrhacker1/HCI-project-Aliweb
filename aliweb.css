@@ -1,10 +1,10 @@
-
+/* this is the CSS document that we used to style the page */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* making the layout of the website */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -12,13 +12,14 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/* having the yellow color in the heading */
 header {
     background-color: #ffea00;
     color: white;
     padding: 10px;
 }
-
+/* structure of the header 
+and then all the following codes is with the header part of the webpage*/
 .top-header {
     justify-content: space-between;
     align-items: center;
@@ -83,7 +84,8 @@ main {
     text-align: center; 
     margin-bottom: 50px;
 }
-
+/*  this is the styling for the footer, 
+with black background and copywrite test and other */
 footer {
     background-color: #333;
     color: white;
@@ -93,7 +95,7 @@ footer {
     width: 100%;
     text-align: center;
 }
-
+/*  to fit for o=smaller screens */
 @media (max-width: 768px) {
     .top-header, .category-menu {
         flex-direction: column;
@@ -113,7 +115,7 @@ footer {
         position: static; 
     }
 }
-
+/* the remaining code is about the styling the navigation bar */
 .navigation .dropdown {
     position: relative; 
 }
@@ -148,7 +150,7 @@ footer {
     color: white;
     font-weight: bold;
 }
-
+/* the following code is for the styling of the search bar */
 #searchDropdown {
     display: none; 
     position: absolute;
@@ -169,7 +171,7 @@ footer {
     display: block; 
   }
 
-
+/* the following code ois for the styling of the testimonials */
 #testimonials {
     background-color: #ffff; 
     padding: 20px;
@@ -235,7 +237,7 @@ footer {
 #newsletter button:hover {
     background-color: #e60000; 
 }
-
+/*  for even smaller screenss */
 @media (max-width: 768px) {
     .testimonials-slider {
         flex-direction: column;
