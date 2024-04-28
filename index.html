@@ -1,13 +1,15 @@
+<!-- we used HTML and css Technology -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
+    <!-- our styles are located here in aliweb.css -->
     <link rel="stylesheet" href="aliweb.css">
 </head>
 <body>
-
+<!-- header contains the logo and the search bar-->
     <header>
         <div class="top-header">
             <img src="logo.png" alt="Aliweb Logo" class="logo"> 
@@ -18,7 +20,7 @@
             </div>
             
             <script>
-              
+            //   we mapped each subcatagory to each link ( a web page in this case)
               var pathMappings = {
                     "browsers": "computing/browsers.html",
                     "cgi java": "computing/CGIJava.html",
@@ -101,7 +103,7 @@
 
 
                 };
-            
+            // function for searching for a particular string of subcatogery
                 function narrowSearch() {
                     var input = document.getElementById('searchInput').value.trim().toLowerCase();
                 
@@ -125,7 +127,9 @@
 
 
         </div>
-
+<!-- this is where we created the elements in navigation bar
+it is a dropdown menu with list of sub catagories and when clicked 
+these sub catagories it takes us to the respective addresses -->
         <nav class="navigation">
             <ul class="category-menu">
 
@@ -255,7 +259,7 @@
 
 
     </header>
-
+<!-- main content of our web page where it shows all the customer comments and testimonials -->
     <main class="main-content">
         <section id="home">
             <h1>Welcome to Our Website</h1>
@@ -296,7 +300,8 @@
      
 
 
-
+<!-- it is the footer of out website and this is where the email can be entered
+that will be recieved to us and you would be registed for this website -->
 
     </main>
 
