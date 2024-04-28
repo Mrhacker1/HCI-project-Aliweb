@@ -10,8 +10,8 @@ def replace_html_code(directory):
                     filedata = f.read()
                 
                 # Define the old and new HTML code
-                old_code = r'<div class="header">\s*<img src="logo.png" alt="Aliweb Logo" class="logo">\s*</div>'
-                new_code = '<header class="header">\n        <a href="../aliweb.html">\n            <img src="logo.png" alt="Aliweb Logo" class="logo">\n        </a>\n    </header>'
+                old_code = r'<header class="header">\s*<a href="../aliweb.html">\s*<img src="logo.png" alt="Aliweb Logo" class="logo">\s*</a>\s*</header>'
+                new_code = '<header class="header">\n        <a href="../index.html">\n            <img src="logo.png" alt="Aliweb Logo" class="logo">\n        </a>\n    </header>'
                 
                 # Use regex to replace the old HTML code with the new one
                 new_filedata = re.sub(old_code, new_code, filedata, flags=re.DOTALL)
